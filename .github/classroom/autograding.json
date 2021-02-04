@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "simple",
+      "setup": "",
+      "run": "./bubble 5 1 0 5 1 9 12",
+      "input": "",
+      "output": "0 1 1 5 5 9 12",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Normal",
+      "setup": "",
+      "run": "./bubble 1 2 8 4 3",
+      "input": "",
+      "output": "1 2 3 4 8",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
