@@ -11,15 +11,18 @@ int main(int argc, char *argv[]){
          printf("argv %d: %s\n",i,argv[i]); 
   }
 
-  N=argc-1;
+  N=argc-2;
 
   int *a;
   a=(int*) malloc(sizeof(int)*N);
 
-  for(i=1;i<argc;i++){
-        a[i-1]=atoi(argv[i]);
+  for(i=2;i<argc;i++){
+        a[i-2]=atoi(argv[i]);
   }
 
+  if(strcmp(argv[1],"bubble")==0){
+    bubble(a,N);
+  }
   //bubble(a,N);
  // selection(a,N);
  insertion(a,N);
